@@ -1,100 +1,107 @@
-:root{
-    --color-dark: #1B396A;
-    --color-dark-xx: #1B396A;
-    --color-dark-x: #1B396A;
-    --color-light: #FFFFFF;
-    --color-grey: #f5f6f8;
-
-}
-body{
+body {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 300;
-    background-color: var(--color-grey);
-    color: var(--color-light);
-    letter-spacing: .05rem;
+}
+
+.imagenes{
+    padding: 0px 195px 0px 195px;
+    margin: -23px;
+    float: left;
+    width: 200px;
+    text-align: center;
+}
+
+
+.navbar {
+    
+    background-color:  #1B396A;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .75);
+    min-height: 100px;
+}
+
+.nav-link{
+    color: #ffffff;
+}
+
+.navbar-brand{
+    font-family: 'Titillium Web', sans-serif;
+    color: #ffffff;
+    
+}
+
+.logo-brand{
+    min-width: 50px;
+    max-width: 50px;
+}
+
+.logoTecNM-brand{
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.logoSep-brand{
+    min-width: 80px;
+    max-width: 70px;
+    margin-top: 10px;
+}
+
+.logoEdu-brand{
+    min-width: 80px;
+    max-width: 300px;
+}
+
+.logoEsc-brand{
+    min-width: 30px;
+    max-width: 150px;
+}
+
+section{
+    padding: 30px 0;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, .75);
+    margin-top: -6px;
+}
+
+div#encabezado{
+    padding: 30px 0;
 
 }
 
-.bg-light{
-    background-color: var(--color-light)!important;
-
+div#general{
+    width: 1200px;
+    height: 250px;
+    margin: auto;
+    
 }
 
-.bg-dark{
-    background-color: var(--color-dark)!important;
+div#logoE{
+    width: 300px;
+    position: relative;
+    left: 50px;
+    top: 90px;
+    background-color:#1B396A;
 }
 
-.p-6{
-    padding: 4rem 7rem;
+
+div#contacto{
+    color: #ffffff;
+    text-align: center;
+   position: relative;
+   left: 375px;
+   bottom: 80px;
+    width: 500px;
+    height: 300px;
 }
 
-.contact-box{
-    padding: 3rem;
+div#logoM{
+    width: 150px;
+    position: relative;
+    bottom: 320px;
+    left: 975px;
+    background-color: #1B396A;
 }
 
-.btn{
-    font-weight: 400;
-    padding: 1rem 2rem;
-    border-radius: 5rem;
-    min-width: 10rem;
-}
-.btn-outline-dark{
-    border: 2px solid var(--color-dark-xx);
 
-}
 
-.form-control {
-    background-color: var(--color-grey);
-    border: 2px solid var(--color-grey);
-    border-radius: .2rem;
-    padding: 1rem 1rem;
-}
 
-.custom-select {
-    background-color: var(--color-grey);
-    border: 1px solid var(--color-grey);
-    border-radius: .2rem;
-    height: 3.7rem;
-}
-
-.combo{
-    padding:10px;
-    }
-
-.register-bg{
-    background-image: url('images/GloriosoITO.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-
-.btn-default{
-    padding: 1rem 5rem;
-}
-.btn-primary{
-    padding: 1rem 5rem;
-}
-@media (max-width: 575.98px){
-    .p-6{
-        padding: 2rem;
-
-    }
-
-    .contact-box{
-        padding: 0;
-    }
-
-    .width-100{
-        width: 100%;       
-    }
-}
-
-@media (max-width: 1200px){
-    .register-bg{
-        min-height: 60vh;
-    }
-    .width-100{
-        width: 100%;       
-    }
-}
+.bg-light-gre{ background-color: #f5f5f5;}
+.bg-dark { background-color: #1a1a1a;}
+.bg-blue{ background-color: #1B396A;}
