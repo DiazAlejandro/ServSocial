@@ -1,16 +1,13 @@
 function registrarAlumno(){
     var name = document.getElementById('name').value;
     var apell = document.getElementById('apell').value;
-    var carrera = document.getElementById('carrera').value;
+    var carrera = document.getElementById('carrera').value; 
     var noctrl = document.getElementById('noctrl').value;
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
-
-    
-
-
+    console.log(name);
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
-        //alert("Alumno Registrado");
+        alert("Alumno Registrado");
         var id = firebase.auth().currentUser.uid;
         firebase.database().ref('alumno/'+id).set({
             studentName:name,
@@ -19,13 +16,13 @@ function registrarAlumno(){
             studentNoctrl:noctrl
         });
     }).catch(function(error){
-        //  alert("Datos Incompletos");
+         alert("Datos Incompletos");
         var errorCode = error.code;
         var errorMessage = error.errorMessage;
         console.log(errorCode);
         console.log(errorMessage);
     });
-    //console.log(email+password);
+    console.log(email+password);
 }
 
 function loginAlumno(){
@@ -41,5 +38,10 @@ function loginAlumno(){
         console.log(errorCode);
         console.log(errorMessage);
     });
+
+}
+
+function volverInicio(){
+    window.location.replace("/index.html");
 
 }

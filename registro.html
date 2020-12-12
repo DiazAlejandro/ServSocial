@@ -1,24 +1,46 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;900&display=swap"
-        rel="stylesheet">
-    <!-- icono -->
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
-    <!-- llamamos al archivo style -->
-    <link href='registro.css' rel="stylesheet">
+    <script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyBjAqwgBh893FPDFLg1PEypTp2_e_Uh2qA",
+        authDomain: "servicio-social-d5a95.firebaseapp.com",
+        databaseURL: "https://servicio-social-d5a95-default-rtdb.firebaseio.com/",
+        projectId: "servicio-social-d5a95",
+        storageBucket: "servicio-social-d5a95.appspot.com",
+        messagingSenderId: "302681815081",
+        appId: "1:302681815081:web:f6649140f3fee89acb4438",
+        measurementId: "G-N4860PEFDP"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
 
-    <title>Regístrate</title>
-  </head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;900&display=swap"
+            rel="stylesheet">
+        <!-- icono -->
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+        <!-- llamamos al archivo style -->
+        <link href='registro.css' rel="stylesheet">
+
+        <title>Regístrate</title>
+    </head>
   <body>    
       <!-- contact-box se encarga de poner un contorno -->
     <section class="contact-box">
@@ -59,8 +81,8 @@
 
                             <div class="form-group col-md-6 width-100">
                                 <label class="font-weight">Carrera: <span class="text-danger">*</span></label>
-                                <select type="text" class="custom-select" list = "carreras" name = "carrera" id = "carrera" style="width:250px";>
-                                <option value="Carrera">Carrera...</option>
+                                <select type="text" class="custom-select" list = "carreras" name = "carrera" id = "carrera" style="width:295px">
+                                <option value="Gestion">*Seleccione carrera</option>
                                 <option value="Gestion">Ingeniería  en Gestión Empresarial</option>
                                 <option value="Sistemas">Ingeniería  en Sis. Computacionales</option>
                                 <option value="Civil">Ingeniería  Civil</option>
@@ -99,7 +121,7 @@
                                 <label class="form-check-label text-muted">Al seleccionar esta casilla acepta que tiene 160 créditos necesarios para realizar el servicio social. </label>
                             </div>
                         </div>
-                        <button class="btn btn-default btn-lg width-100" onclick="login.html"> Regresar</button>
+                        <button class="btn btn-default btn-lg width-100" onclick="history.back()"> Regresar</button>
                         <button class="btn btn-primary btn-lg width-100" onclick="registrarAlumno()"> Regístrate</button>
                     </form>
                     <small class="d-inline-block text-muted mt-5"> Todos los Derechos Reservados ® 2020 </small>
@@ -108,7 +130,7 @@
         </div>
     </section>
   
-
+    <script src = "app.js"></script>    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
