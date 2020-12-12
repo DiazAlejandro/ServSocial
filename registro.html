@@ -1,12 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio Social ITOAXACA</title>
+
+    
+>>>>>>> parent of ca6da33... Registro
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+<<<<<<< HEAD
 
 
+=======
+    
+    
+>>>>>>> parent of ca6da33... Registro
     <script>
     var firebaseConfig = {
         apiKey: "AIzaSyBjAqwgBh893FPDFLg1PEypTp2_e_Uh2qA",
@@ -22,6 +36,7 @@
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
     </script>
+<<<<<<< HEAD
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -138,4 +153,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
+=======
+</head>
+
+<body>
+    <div id = Registro>
+        <h1>Registro - Servicio Social</h1>
+        <input type="text" name = "name" id = "name" placeholder="Ingrese Nombre"><br><br>
+        <input type="text" name = "apell" id = "apell" placeholder="Ingrese Apellidos"><br><br>
+        <input type="text" list = "carreras" name = "carrera" id = "carrera" placeholder="Carrera"><br><br>
+        <input type="tel" name= "noctrl" id = "noctrl" placeholder="No. Control"><br><br>
+        <input type="email" name = "email" id = "email" placeholder="Ingrese su Correo Electrónico"><br><br>
+        <input type="password" name = "pass" id = "password" placeholder="Ingrese su contraseña"><br><br>
+
+        <datalist id = "carreras">
+            <option value = "Ingenieria en Gestión Empresarial">
+            <option value = "Ingenieria Química">
+            <option value = "Ingenieria en Sistemas Computacionales">
+                //Agregar más carreras
+            </datalist>
+        <button onclick="registrarAlumno()">Registrarse como nuevo Alumno</button><br><br>
+        <a href="/index.html">Atrás</a>
+    </div>
+    <script src = "app.js"></script>
+    
+</body>
+>>>>>>> parent of ca6da33... Registro
 </html>
